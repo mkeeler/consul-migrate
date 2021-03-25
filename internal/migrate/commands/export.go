@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/hashicorp/consul-migrate/internal/migrate"
 	"github.com/hashicorp/go-hclog"
 	"github.com/mitchellh/cli"
+	"github.com/mkeeler/consul-migrate/internal/migrate"
 )
 
 type exportCommand struct {

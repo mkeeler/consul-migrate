@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/hashicorp/consul-migrate/internal/migrate"
+	"github.com/mkeeler/consul-migrate/internal/migrate"
 	"github.com/hashicorp/go-hclog"
 	"github.com/mitchellh/cli"
 )

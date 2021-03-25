@@ -3,9 +3,9 @@ package main
 import (
 	"os"
 
-	"github.com/hashicorp/consul-migrate/internal/migrate"
-	"github.com/hashicorp/consul-migrate/internal/migrate/commands"
 	"github.com/mitchellh/cli"
+	"github.com/mkeeler/consul-migrate/internal/migrate"
+	"github.com/mkeeler/consul-migrate/internal/migrate/commands"
 )
 
 func main() {
