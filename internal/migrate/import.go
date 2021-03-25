@@ -101,15 +101,15 @@ func (imp *importer) importNamespace(nsData *NamespaceData) error {
 
 func (imp *importer) importACLData(aclData *ACLData) error {
 	if err := imp.importACLPolicies(aclData.ACLPolicies); err != nil {
-		return fmt.Errorf("failed to export acl policies: %w", err)
+		return fmt.Errorf("failed to import acl policies: %w", err)
 	}
 
 	if err := imp.importACLRoles(aclData.ACLRoles); err != nil {
-		return fmt.Errorf("failed to export acl roles: %w", err)
+		return fmt.Errorf("failed to import acl roles: %w", err)
 	}
 
 	if err := imp.importACLTokens(aclData.ACLTokens); err != nil {
-		return fmt.Errorf("failed to export acl tokens: %w", err)
+		return fmt.Errorf("failed to import acl tokens: %w", err)
 	}
 
 	return nil
