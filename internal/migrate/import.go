@@ -55,7 +55,7 @@ func (imp *importer) importEnterprise(data *Data) error {
 	if !data.Enterprise {
 		// the data was from oss so we just allow the data to go into
 		// the default namespace
-		aclData := data.Namespaces["default"].ACLData
+		aclData := data.ACLData
 		return imp.importACLData(&aclData)
 	}
 
